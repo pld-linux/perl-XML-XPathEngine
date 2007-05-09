@@ -6,7 +6,7 @@
 %define	pdir	XML
 %define	pnam	XPathEngine
 Summary:	XML::XPathEngine - a re-usable XPath engine for DOM-like trees
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	XML::XPathEngine - silnik XPath dla drzew w stylu DOM
 Name:		perl-XML-XPathEngine
 Version:	0.08
 Release:	1
@@ -25,14 +25,23 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module provides an XPath engine, that can be re-used by other
 module/classes that implement trees.
 
-In order to use the XPath engine, nodes in the user module need to mimick
-DOM nodes. The degree of similitude between the user tree and a DOM dictates 
-how much of the XPath features can be used. A module implementing all of the
-DOM should be able to use this module very easily (you might need to add
-the cmp method on nodes in order to get ordered result sets). 
+In order to use the XPath engine, nodes in the user module need to
+mimick DOM nodes. The degree of similitude between the user tree and a
+DOM dictates how much of the XPath features can be used. A module
+implementing all of the DOM should be able to use this module very
+easily (you might need to add the cmp method on nodes in order to get
+ordered result sets). 
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Ten moduł udostępnia silnik XPath, który można wykorzystywać w innych
+modułach/klasach implementujących drzewa.
+
+W celu użycia silnika XPath węzły w module użytkownika muszą
+naśladować węzły DOM. Stopień podobieństwa między drzewem użytkownika
+a drzewem DOM określa jak wiele możliwości XPath można wykorzystać.
+Moduł implementujący całość DOM powinien być w stanie bardzo łatwo
+użyć tego modułu (może zajść potrzeba dodania metody cmp dla węzłów w
+celu uzyskania uporządkowanych zbiorów wyników).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
