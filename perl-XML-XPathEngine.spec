@@ -8,13 +8,13 @@
 Summary:	XML::XPathEngine - a re-usable XPath engine for DOM-like trees
 Summary(pl.UTF-8):	XML::XPathEngine - silnik XPath dla drzew w stylu DOM
 Name:		perl-XML-XPathEngine
-Version:	0.08
+Version:	0.12
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	225f53d420d4fca50cd9d18b877780d6
+# Source0-md5:	ecb1121f5a11411a2d4942c87d8725af
 URL:		http://search.cpan.org/dist/XML-XPathEngine/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
